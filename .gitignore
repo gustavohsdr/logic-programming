@@ -1,0 +1,30 @@
+# Ignorar arquivos de backup do Visualg
+*.bak
+
+# Ignorar arquivos temporários do Visualg
+*.tmp
+
+# Ignorar arquivos de configuração local do Visualg
+*.cfg
+
+# Ignorar arquivos de log do Visualg
+*.log
+
+# Ignorar arquivos de compilação (se houver)
+*.o
+*.out
+*.exe
+
+# Ignorar diretórios temporários e de compilação (se houver)
+temp/
+build/
+bin/
+obj/
+
+# Ignorar arquivos específicos do Visualg (exemplo, ajuste conforme necessário)
+*.vaz
+
+# Ignorar arquivos específicos do seu sistema operacional
+.DS_Store
+Thumbs.db
+
