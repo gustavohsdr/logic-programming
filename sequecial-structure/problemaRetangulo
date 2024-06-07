@@ -1,0 +1,29 @@
+Algoritmo "problemaRentanguloV001"
+// 
+//  
+
+Var
+
+valorBase, valorAltura, area, perimetro, diagonal: Real
+
+Inicio
+
+escreva("Base do retangulo: ")
+leia(valorBase)
+
+escreva("Altura do retangulo: ")
+leia(valorAltura)
+
+area <- (valorBase * valorAltura)
+escreval("AREA = ", area:1:4)
+
+perimetro <- ((valorBase * 2) + (valorAltura * 2))
+escreval("PERIMETRO = ", perimetro:1:4)
+
+diagonal <- ((valorBase ^ 2)) + (valorAltura ^ 2))
+diagonal <- RAIZQ(diagonal)
+escreval("DIAGONAL = ", diagonal:1:4)
+
+
+
+Fimalgoritmo
