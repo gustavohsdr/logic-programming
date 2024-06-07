@@ -1,7 +1,7 @@
 Algoritmo "problemaRentanguloV001"
 // 
-//  
-
+//
+  
 Var
 
 valorBase, valorAltura, area, perimetro, diagonal: Real
@@ -23,7 +23,5 @@ escreval("PERIMETRO = ", perimetro:1:4)
 diagonal <- ((valorBase ^ 2)) + (valorAltura ^ 2))
 diagonal <- RAIZQ(diagonal)
 escreval("DIAGONAL = ", diagonal:1:4)
-
-
 
 Fimalgoritmo

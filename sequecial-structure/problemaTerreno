@@ -1,10 +1,13 @@
 algoritmo "problemaTerrenoV001"
 //  
-//  
+//
+  
 var
+
 valorLargura, valorComprimento, valorMetroQuadrado, areaTerreno, precoTerreno: real
 
 inicio
+
 escreva("Digite a largura do terreno: ")
 leia(valorLargura)
 
@@ -19,7 +22,5 @@ escreval("Area do terreno = ", areaTerreno:1:2)
 
 precoTerreno <- areaTerreno * valorMetroQuadrado
 escreval("Preco do tereno = ", precoTerreno:1:2)
-
-
 
 fimalgoritmo
