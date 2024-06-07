@@ -1,0 +1,25 @@
+algoritmo "problemaTerrenoV001"
+//  
+//  
+var
+valorLargura, valorComprimento, valorMetroQuadrado, areaTerreno, precoTerreno: real
+
+inicio
+escreva("Digite a largura do terreno: ")
+leia(valorLargura)
+
+escreva("Digite o comprimento do terreno: ")
+leia(valorComprimento)
+
+escreva("Digite o valor do metro quadrado: ")
+leia(valorMetroQuadrado)
+
+areaTerreno <- valorLargura * valorComprimento
+escreval("Area do terreno = ", areaTerreno:1:2)
+
+precoTerreno <- areaTerreno * valorMetroQuadrado
+escreval("Preco do tereno = ", precoTerreno:1:2)
+
+
+
+fimalgoritmo
