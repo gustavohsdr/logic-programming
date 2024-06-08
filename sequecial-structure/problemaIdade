@@ -1,0 +1,56 @@
+algoritmo "problemaIdadeV001"
+//
+//
+var
+
+contador: inteiro
+nome, acumuladorNome: Caractere
+somaIdade, idade: inteiro
+media : real
+
+inicio
+
+para contador de 0 ate 2 faca
+
+     somaIdade <- idade + somaIdade
+     
+     se contador < 1 entao
+          escreval("Dados da primeira pessoa:")
+
+          escreva("Nome: ")
+          leia(nome)
+
+          acumuladorNome <- acumuladorNome + " e " + nome
+
+          escreva("Idade: ")
+          leia(idade)
+
+
+
+          senao
+             se contador = 1 entao
+                escreval("Dados da segunda pessoa: ")
+
+                escreva("Nome: ")
+                leia(nome)
+
+                acumuladorNome <- nome + acumuladorNome
+
+                escreva("Idade: ")
+                leia(idade)
+
+
+                senao
+                     se contador= 2 entao
+                     media <- somaIdade / 2
+                     
+             fimse
+          fimse
+     fimse
+
+
+fimPara
+
+escreval("A idade média de ", acumuladorNome," é de ", media, " anos.")
+
+fimalgoritmo
