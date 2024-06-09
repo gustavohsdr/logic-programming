@@ -1,0 +1,31 @@
+algoritmo "problemaMenorDeTresV001"
+//
+var
+
+primeiroValor, segundoValor, terceiroValor, menorValor: Inteiro
+
+inicio
+
+escreva("Primeiro valor: ")
+leia(primeiroValor)
+
+escreva("Segundo valor: ")
+leia(segundoValor)
+
+escreva("Terceiro valor: ")
+leia(terceiroValor)
+
+menorValor <- primeiroValor
+
+se segundoValor < menorValor entao
+   menorValor <- segundoValor
+   fimse
+   
+se terceiroValor < menorValor entao
+   menorValor <- terceiroValor
+   fimse
+   
+   
+escreva("MENOR = ", menorValor)
+
+fimalgoritmo

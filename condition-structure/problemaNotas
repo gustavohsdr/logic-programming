@@ -1,0 +1,20 @@
+algoritmo "problemaNotasV001"
+var
+primeiraNota, segundaNota, notaFinal : real
+inicio
+escreva("Digite a primeira nota: ")
+leia(primeiraNota)
+
+escreva("Digite a segunda nota: ")
+leia(segundaNota)
+
+notaFinal <- primeiraNota + segundaNota
+
+se notaFinal < 60 entao
+escreva("REPROVADO")
+
+Senao
+     escreva("APROVADO")
+     
+fimse
+fimalgoritmo
