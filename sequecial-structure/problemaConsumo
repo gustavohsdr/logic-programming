@@ -1,0 +1,21 @@
+algoritmo "problemaConsumoV001"
+//
+//
+var
+
+distanciaPercorrida : inteiro
+
+combustivelGasto, consumoMedio : real
+
+inicio
+
+escreva("Distancia percorrida: ")
+leia(distanciaPercorrida)
+
+escreva("Combustivel gasto: ")
+leia(combustivelGasto)
+
+consumoMedio <- distanciaPercorrida / combustivelGasto
+escreva("Consumo medio = ", consumoMedio:1:3)
+
+fimalgoritmo

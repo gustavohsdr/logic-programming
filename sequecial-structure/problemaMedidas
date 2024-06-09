@@ -1,0 +1,27 @@
+algoritmo "problemaMedidasV001"
+
+var
+
+valorA, valorB, valorC, areaQuadrado, areaTriangulo, areaTrapezio : real
+
+
+inicio
+
+escreva("Informe a medida A: ")
+leia(valorA)
+
+escreva("Informe a medida B: ")
+leia(valorB)
+
+escreva("Informe a medida C: ")
+leia(ValorC)
+
+areaQuadrado <- (valorA * valorA)
+areaTriangulo <- (valorA * valorB) / 2
+areaTrapezio <- ((valorA + valorB) * valorC) / 2
+
+escreval("AREA DO QUADRADO = ", areaQuadrado:1:4)
+escreval("AREA DO TRIANGULO = ", areaTriangulo:1:4)
+escreval("AREA DO TRAPEZIO = ", areaTrapezio:1:4)
+
+fimalgoritmo

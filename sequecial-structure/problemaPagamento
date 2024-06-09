@@ -1,0 +1,27 @@
+algoritmo "problemaPagamento"
+//
+//
+var
+
+nomePessoa: caractere
+
+valorHora, valorPagamento: real
+
+valorHorasTrabalhadas: inteiro
+
+inicio
+
+escreva("Nome: ")
+leia(nomePessoa)
+
+escreva("Valor por hora: ")
+leia(valorHora)
+
+escreva("Horas trabalhadas: ")
+leia(ValorHorasTrabalhadas)
+
+valorPagamento <- valorHora * valorHorasTrabalhadas
+escreva("O pagamento para ",nomePessoa, " deve ser ", valorPagamento:1:2)
+
+
+fimalgoritmo

@@ -1,0 +1,19 @@
+ algoritmo "problemaSoma001"
+ 
+ var
+ 
+ valorX, valorY, soma: inteiro
+
+ inicio
+
+ escreva ("Digite o valor de X: ")
+ leia (valorX)
+ 
+ escreva("Digite o valor de Y: ")
+ leia (valorY)
+ 
+ soma <- valorX + valorY
+ 
+ escreva("SOMA =",soma)
+ 
+ fimalgoritmo

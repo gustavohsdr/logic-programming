@@ -1,0 +1,20 @@
+algoritmo "problemaDuracaoV001"
+
+
+var
+
+entrada : inteiro
+h,m,s:real
+
+
+
+inicio
+
+escreval("Entre com os segundos: ")
+leia(entrada)
+h<- entrada / 3600
+m<- (entrada % 3600)/60
+s<- (entrada % 3600)% 60
+escreval(int(h) ," : ",int(m)," : ",int(s))
+
+fimalgoritmo

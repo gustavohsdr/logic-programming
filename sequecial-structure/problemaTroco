@@ -1,0 +1,25 @@
+algoritmo "probleaTrocoV001"
+//
+//
+var
+
+valorUnitario, valorRecebido, valorTroco : real
+
+quantidade: inteiro
+
+inicio
+
+escreva("Preço unitário do produto: ")
+leia(valorUnitario)
+
+escreva("Quantidade comprada: ")
+leia(quantidade)
+
+escreva("Dinheiro recebido: ")
+leia(valorRecebido)
+
+valorTroco <- - (valorUnitario * quantidade) + valorRecebido
+escreva("TROCO = ",valorTroco:1:2)
+
+
+fimalgoritmo
