@@ -1,0 +1,29 @@
+algoritmo "problemaTrocoVerificadoV001"
+
+var
+
+precoUnitario, valorPagoCliente, valorTotal,valorFaltaPagar, valorTroco: Real
+quantidadeProduto: Inteiro
+
+inicio
+
+escreva("Preço unitário do produto: ")
+leia(precoUnitario)
+
+escreva("Quantidade comprada: ")
+leia(quantidadeProduto)
+
+escreva("Dinheiro recebido: ")
+leia(valorPagoCliente)
+
+valorTotal <- (precoUnitario * quantidadeProduto)
+
+se valorPagoCliente < valorTotal entao
+   valorFaltaPagar <- valorTotal - valorPagoCliente
+   escreva("DINHEIRO INSUFICIENTE, FALTAM ", valorFaltaPagar:1:2," REAIS.")
+   senao
+        valorTroco <- valorPagoCliente - valorTotal
+        escreva("TROCO = ", valorTroco:1:2)
+
+fimse
+fimalgoritmo

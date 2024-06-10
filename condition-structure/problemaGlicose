@@ -1,0 +1,23 @@
+algoritmo "problemaGlicoseV001"
+var
+
+medidaGlicose: Real
+
+inicio
+escreva("Digite a medida da glicose: ")
+leia(medidaGlicose)
+
+se medidaGlicose <= 100 entao
+   escreva("Classificação: normal")
+   
+   senao
+        se medidaGlicose <= 140 entao
+        escreva("Classificação: elevado")
+        
+        senao
+             escreva("Classificação: diabetes")
+
+     fimse
+fimse
+
+fimalgoritmo

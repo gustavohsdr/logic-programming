@@ -1,0 +1,27 @@
+algoritmo "problemaDardoV001"
+var
+
+distanciaA, distanciaB, distanciaC, maiorDistancia: Real
+
+
+inicio
+escreval("Digite as tres distancias: ")
+leia(distanciaA)
+leia(distanciaB)
+leia(distanciaC)
+
+maiorDistancia <- distanciaA
+
+se maiorDistancia < distanciaB entao
+   maiorDistancia <- distanciaB
+   
+   fimse
+   
+   se maiorDistancia < distanciaC entao
+   maiorDistancia <- distanciaC
+   
+   fimse
+   
+   
+escreva("MAIOR DISTANCIA = ", maiorDistancia:1:2)
+fimalgoritmo
