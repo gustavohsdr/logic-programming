@@ -1,0 +1,36 @@
+algoritmo "problemaMultiplosV001"
+
+
+var
+
+valor1, valor2 : inteiro
+
+validacaoNumero: logico
+inicio
+
+escreval("Digite dois numeros inteiro:")
+leia(valor1)
+leia(valor2)
+
+se valor1 > valor2 entao
+
+   se (valor1 % valor2 = 0) entao
+      escreval("São multiplos")
+      
+      senao
+        escreval("Não são multiplos")
+   fimse
+   
+   senao
+        se valor2 > valor1 entao
+
+           se (valor2 % valor1 = 0) entao
+              escreval("São multiplos")
+              
+              senao
+                   escreval("Não são multiplos")
+           fimse
+        fimse
+fimse
+fimalgoritmo
+

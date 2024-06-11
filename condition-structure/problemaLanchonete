@@ -1,0 +1,56 @@
+algoritmo "problemaLanchoneteV001"
+var
+
+codigoProduto, quantidadeComprada : inteiro
+
+valorTotal: Real
+inicio
+
+escreval ("Código do produto | Preço do produto")
+escreval(" ")
+escreval(" 1 ---------------> R$ 5,00 ")
+escreval(" 2 ---------------> R$ 3,50 ")
+escreval(" 3 ---------------> R$ 4,80 ")
+escreval(" 4 ---------------> R$ 8,90 ")
+escreval(" 5 ---------------> R$ 7,32 ")
+
+escreval("")
+escreval("----------------------------")
+escreval("")
+
+escreva("Código do produto comprado: ")
+leia(codigoProduto)
+
+escreva("Quantidade comprada: ")
+leia(quantidadeComprada)
+
+escolha codigoProduto
+
+caso 1
+
+     valorTotal <- quantidadeComprada * 5.00
+     escreva("Valor a pagar: ", valorTotal:1:2)
+     
+caso 2
+
+     valorTotal <- quantidadeComprada * 3.50
+     escreva("Valor a pagar: ", valorTotal:1:2)
+
+caso 3
+
+     valorTotal <- quantidadeComprada * 4.80
+     escreva("Valor a pagar: ", valorTotal:1:2)
+
+caso 4
+
+     valorTotal <- quantidadeComprada * 8.90
+     escreva("Valor a pagar: ", valorTotal:1:2)
+     
+caso 5
+
+     valorTotal <- quantidadeComprada * 7.32
+     escreva("Valor a pagar: ", valorTotal:1:2)
+
+fimescolha
+
+fimalgoritmo
