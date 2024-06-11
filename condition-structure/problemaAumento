@@ -1,0 +1,42 @@
+algoritmo "problemaAumentoV001"
+var
+
+valorSalario, novoSalario, aumentoSalario: Real
+
+inicio
+escreva("Digite o salario da pessoa : ")
+leia(valorSalario)
+
+se valorSalario <= 1000 entao
+   novoSalario <- (valorSalario * 0.20) + valorSalario
+   escreval("Novo salario = R$ ",novoSalario:1:2)
+   aumentoSalario <- novoSalario - valorSalario
+   escreval("Aumento: ", aumentoSalario:1:2)
+   escreval("Porcentagem = 20%")
+   
+   senao
+        se valorSalario <= 3000 entao
+           novoSalario <- (valorSalario * 0.15) + valorSalario
+           escreval("Novo salario = R$ ",novoSalario:1:2)
+           aumentoSalario <- novoSalario - valorSalario
+           escreval("Aumento: ", aumentoSalario:1:2)
+           escreval("Porcentagem = 15%")
+
+        senao
+             se valorSalario <= 8000 entao
+                novoSalario <- (valorSalario * 0.10) + valorSalario
+                escreval("Novo salario = R$ ",novoSalario:1:2)
+                aumentoSalario <- novoSalario - valorSalario
+                escreval("Aumento: ", aumentoSalario:1:2)
+                escreval("Porcentagem = 10%")
+                
+                senao
+                     novoSalario <- (valorSalario * 0.05) + valorSalario
+                     escreval("Novo salario = R$ ",novoSalario:1:2)
+                     aumentoSalario <- novoSalario - valorSalario
+                     escreval("Aumento: ", aumentoSalario:1:2)
+                     escreval("Porcentagem = 5%")
+                fimse
+             fimse
+        fimse
+fimalgoritmo

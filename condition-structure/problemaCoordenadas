@@ -1,0 +1,42 @@
+algoritmo "problemaCoordenadasV001"
+var
+valorX, valorY: real
+inicio
+escreva("Valor de X: ")
+leia(valorX)
+
+escreva("Valor de Y: ")
+leia(valorY)
+
+se (valorY > 0) e (valorX > 0) entao
+   escreva("Q1")
+   
+   senao
+        se (valorY > 0) e (valorX < 0) entao
+           escreva("Q2")
+           
+           senao
+                se (valorY < 0) e (valorX < 0) entao
+                   escreva("Q3")
+                   
+                   senao
+                        se (valorY < 0) e (valorX > 0) entao
+                           escreva("Q4")
+                           
+                           senao
+                                se (valorY > 0) e (valorX = 0) entao
+                                   escreva("Eixo Y")
+
+                                   senao
+                                        se (valorY = 0) e (valorX > 0) entao
+                                           escreva("Eixo X")
+                                           
+                                           senao
+                                                escreva("Origem")
+                                           fimse
+                                   fimse
+                           fimse
+                   fimse
+           fimse
+   fimse
+fimalgoritmo
