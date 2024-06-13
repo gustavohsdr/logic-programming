@@ -20,13 +20,10 @@ se (valorEscala = "C") ou (valorEscala ="c") entao
    escreva("Digite a temperatura em Fahrenheit: ")
    leia(valorTemperatura)
 
-   conversaoTemperatura <-(valorTemperatura - 32) /1.8)
+   conversaoTemperatura <-(valorTemperatura - 32) / 1.8)
 
    escreva("Temperatura equivalente em Celsius: ", conversaoTemperatura:1:2)
 
 fimse
-
-
-
 
 fimalgoritmo

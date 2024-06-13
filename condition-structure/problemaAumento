@@ -1,42 +1,30 @@
-algoritmo "problemaAumentoV001"
+algoritmo "problemaAumentoV002"
 var
-
-valorSalario, novoSalario, aumentoSalario: Real
+valorSalario, novoSalario, aumentoSalario, porcentagemAumento: Real
 
 inicio
 escreva("Digite o salario da pessoa : ")
 leia(valorSalario)
 
 se valorSalario <= 1000 entao
-   novoSalario <- (valorSalario * 0.20) + valorSalario
-   escreval("Novo salario = R$ ",novoSalario:1:2)
-   aumentoSalario <- novoSalario - valorSalario
-   escreval("Aumento: ", aumentoSalario:1:2)
-   escreval("Porcentagem = 20%")
-   
+   porcentagemAumento <- 20
    senao
         se valorSalario <= 3000 entao
-           novoSalario <- (valorSalario * 0.15) + valorSalario
-           escreval("Novo salario = R$ ",novoSalario:1:2)
-           aumentoSalario <- novoSalario - valorSalario
-           escreval("Aumento: ", aumentoSalario:1:2)
-           escreval("Porcentagem = 15%")
-
+           porcentagemAumento <- 15
         senao
              se valorSalario <= 8000 entao
-                novoSalario <- (valorSalario * 0.10) + valorSalario
-                escreval("Novo salario = R$ ",novoSalario:1:2)
-                aumentoSalario <- novoSalario - valorSalario
-                escreval("Aumento: ", aumentoSalario:1:2)
-                escreval("Porcentagem = 10%")
-                
+                porcentagemAumento <- 10
                 senao
-                     novoSalario <- (valorSalario * 0.05) + valorSalario
-                     escreval("Novo salario = R$ ",novoSalario:1:2)
-                     aumentoSalario <- novoSalario - valorSalario
-                     escreval("Aumento: ", aumentoSalario:1:2)
-                     escreval("Porcentagem = 5%")
+                     porcentagemAumento <- 5
                 fimse
              fimse
         fimse
+
+novoSalario <- (valorSalario * (porcentagemAumento / 100)) + valorSalario
+aumentoSalario <- novoSalario - valorSalario
+
+escreval("Novo salario = R$ ",novoSalario:1:2)
+escreval("Aumento: ", aumentoSalario:1:2)
+escreval("Porcentagem = ", porcentagemAumento ,"%")
+
 fimalgoritmo

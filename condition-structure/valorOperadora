@@ -1,20 +1,16 @@
-algoritmo "valorOperadoraV001"
+algoritmo "valorOperadoraV002"
 var
 
 quantidadeMinutos: inteiro
-valorPagar, valorPlano: real
+valorPago: real
 
 inicio
-valorPlano <- 50.00
 escreva("Digite a quantidade de minutos: ")
 leia(quantidadeMinutos)
 
+valorPago <- 50.00
 se quantidadeMinutos > 100 entao
-   valorPagar <- ((quantidadeMinutos - 100) * 2) + valorPlano
-   escreva("Valor a pagar: R$ ", valorPagar:1:2)
-   
-   senao
-        escreva("Valor a pagar: R$ ", valorPlano:1:2)
-
+   valorPago <- valorPago + 2 * (quantidadeMinutos - 100)
 fimse
+escreva("Valor a pagar: R$ ", valorPago:1:2)
 fimalgoritmo

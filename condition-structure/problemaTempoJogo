@@ -1,4 +1,4 @@
-algoritmo "problemaTempoJogoV001"
+algoritmo "problemaTempoJogoV002"
 var
 
 horaInicial, horaFinal, duracaoTempo: inteiro
@@ -10,14 +10,10 @@ leia(horaInicial)
 escreva("Hora final: ")
 leia(horaFinal)
 
-
 se horaInicial > horaFinal entao
    duracaoTempo <- (horaFinal - horaInicial) + 24
-   escreva("O JOGO DUROU ", duracaoTempo, "(S)")
-   
    senao
         duracaoTempo <- (horaFinal - horaInicial)
-        escreva("O JOGO DUROU ", duracaoTempo,"(S)")
-
 fimse
+escreva("O JOGO DUROU", duracaoTempo, " HORA(S)")
 fimalgoritmo

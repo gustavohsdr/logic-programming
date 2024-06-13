@@ -1,4 +1,4 @@
-algoritmo "problemaMultiplosV001"
+algoritmo "problemaMultiplosV002"
 
 
 var
@@ -12,25 +12,12 @@ escreval("Digite dois numeros inteiro:")
 leia(valor1)
 leia(valor2)
 
-se valor1 > valor2 entao
-
-   se (valor1 % valor2 = 0) entao
-      escreval("São multiplos")
-      
-      senao
-        escreval("Não são multiplos")
-   fimse
+se (valor1 % valor2 = 0) ou (valor2 % valor1 = 0) entao
+   escreval("São multiplos")
    
    senao
-        se valor2 > valor1 entao
+        escreval("Não são multiplos")
+   fimse
 
-           se (valor2 % valor1 = 0) entao
-              escreval("São multiplos")
-              
-              senao
-                   escreval("Não são multiplos")
-           fimse
-        fimse
-fimse
 fimalgoritmo
 
