@@ -1,0 +1,29 @@
+algoritmo "problemaMediaIdadeV001"
+var
+contador, valor : inteiro
+calculo, media: real
+inicio
+contador <- 0
+escreval("Digite as idades: ")
+
+enquanto verdadeiro faca
+         leia(valor)
+         
+         se valor > 0 entao
+         contador <- contador + 1
+         calculo <- (valor + calculo)
+         media <- calculo / contador
+         
+         senao
+              se (valor < 0) e (contador < 1) entao
+              escreval("IMPOSSIVEL CALCULAR")
+              interrompa
+              
+              senao
+                   escreval("MEDIA = ", media:1:2)
+                   interrompa
+              fimse
+         fimse
+
+fimenquanto
+fimalgoritmo

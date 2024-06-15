@@ -1,0 +1,21 @@
+algoritmo "problemaSenhaFixaV001"
+var
+senha, senhaValida: caractere
+inicio
+senhaValida <- "2002"
+escreva("Digite a senha: ")
+leia(senha)
+enquanto Verdadeiro faca
+
+         se senha = senhaValida entao
+            escreva("Acesso permitido!!")
+            interrompa
+            
+            senao
+                 escreva("Senha Invalida! Tente novamente: ")
+                 leia(senha)
+                 fimse
+
+fimenquanto
+
+fimalgoritmo

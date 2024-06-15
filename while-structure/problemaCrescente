@@ -1,0 +1,20 @@
+algoritmo "problemaCrescenteV001"
+var
+valorX, valorY : inteiro
+
+inicio
+escreva("Digite dois numeros: ")
+leia(valorX)
+leia(valorY)
+enquanto valorX <> valorY faca
+se valorX > valorY entao
+            escreval("DESCRECENTE!")
+
+            senao
+                 escreval("CRESCENTE")
+fimse
+escreval("Digite dois numeros: ")
+leia(valorX)
+leia(valorY)
+fimenquanto
+fimalgoritmo

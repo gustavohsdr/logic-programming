@@ -1,0 +1,36 @@
+algoritmo "problemaCoordenadasV002"
+var
+valorX, valorY: real
+inicio
+enquanto Verdadeiro faca
+escreval("Valor de X e Y: ")
+leia(valorX)
+leia(valorY)
+
+se (valorY > 0) e (valorX > 0) entao
+   escreval("QUADRADANTE Q1")
+
+   senao
+        se (valorY > 0) e (valorX < 0) entao
+           escreval("QUADRADANTE Q2")
+
+           senao
+                se (valorY < 0) e (valorX < 0) entao
+                   escreval("QUADRADANTE Q3")
+
+                   senao
+                        se (valorY < 0) e (valorX > 0) entao
+                           escreval("QUADRADANTE Q4")
+
+                           senao
+                                se (valorY = 0) ou (valorX = 0) entao
+                                   interrompa
+
+                                fimse
+                        fimse
+                fimse
+        fimse
+fimse
+fimenquanto
+fimalgoritmo
+

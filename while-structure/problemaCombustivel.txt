@@ -1,0 +1,49 @@
+algoritmo "problemaCombustivelV001"
+var
+valor, contadorAlcool, contadorGasolina, contadorDiesel : inteiro
+
+inicio
+escreval("*************")
+escreval(" 1. Alcool   ")
+escreval(" 2. Gasolina ")
+escreval(" 3. Diesel   ")
+escreval(" 4. Sair     ")
+escreval("*************")
+
+contadorAlcool <- 0
+contadorGasolina <- 0
+contadorDiesel <- 0
+
+enquanto Verdadeiro faca
+         escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+         leia(valor)
+
+         se valor = 1 entao
+              contadorAlcool <- contadorAlcool + 1
+              
+              senao
+                   se valor = 2 entao
+                      contadorGasolina <- contadorGasolina + 1
+                      
+                      senao
+                           se valor = 3 entao
+                              contadorDiesel <- contadorDiesel + 1
+                              
+                              senao
+                                   se valor = 4 entao
+                                      interrompa
+                                   
+                        fimse
+                   fimse
+              fimse
+         fimse
+
+
+fimenquanto
+
+escreval("MUITO OBRIGADO")
+escreval("Alcool: ",contadorAlcool)
+escreval("Gasolina: ",contadorGasolina)
+escreval("Diesel: ",contadorDiesel)
+fimalgoritmo
+
