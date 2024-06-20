@@ -1,0 +1,28 @@
+algoritmo "problemasParesConsecutivosV001"
+
+var
+valorX, formula, imparPar : inteiro
+
+inicio
+escreva("Digite um numero inteiro: ")
+leia(valorX)
+
+enquanto valorX <> 0 faca
+
+  se (valorX % 2 = 1) entao
+     imparPar <- valorX + 1
+     formula <- 5* imparPar + 20
+     
+     senao
+       formula <- 5 * valorX + 20
+     
+  fimse
+
+escreval("SOMA = ", formula)
+escreva("Digite um numero inteiro: ")
+leia(valorX)
+
+
+fimenquanto
+
+fimalgoritmo

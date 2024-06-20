@@ -1,0 +1,30 @@
+algoritmo "problemaSomaImparesV001"
+
+var
+valorX,valorY,somaXy: inteiro
+
+inicio
+escreval("Digite dois numeros:")
+leia(valorX)
+leia(valorY)
+
+se valorX < valorY entao
+  para valorX de (valorX + 1) ate (valorY - 1) faca
+       se (valorX % 2 <> 0) entao
+         somaXy <- valorX + somaXy
+
+       fimse
+
+  fimpara
+  senao
+      para valorY de (valorY + 1) ate (valorX - 1) faca
+         se (valorY % 2 <> 0) entao
+           somaXy <- valorY + somaXy
+         
+         fimse
+      fimpara
+fimse
+
+escreva("SOMA DOS IMPARES = ", somaXy)
+fimalgoritmo
+

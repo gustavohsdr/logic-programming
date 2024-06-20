@@ -1,0 +1,15 @@
+algoritmo "problemaTabuadaV001"
+var
+valorN, tabuada, i : inteiro
+
+inicio
+escreva("Deseja a tabuada para qual valor? ")
+leia(valorN)
+
+para i de 1 ate 10 faca
+tabuada <- i * valorN
+escreval(valorN ," *", i, " =", tabuada)
+
+fimpara
+
+fimalgoritmo
