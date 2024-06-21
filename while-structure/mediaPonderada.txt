@@ -1,0 +1,26 @@
+algoritmo "problemaMediaPonderadaV001"
+var
+numeroCasos, i : inteiro
+casoTeste, valorA,valorB,valorC,mediaPonderadaTotal, mediaPonderadaA, mediaPonderadaB, mediaPonderadaC : real
+
+inicio
+escreva("Quantos casos voce vai digitar? ")
+leia(numeroCasos)
+
+para i de 1 ate numeroCasos faca
+  escreval("Digite os numeros: ")
+  leia(valorA)
+  leia(valorB)
+  leia(valorC)
+  
+  mediaPonderadaA <- valorA * 2
+  mediaPonderadaB <- valorB * 3
+  mediaPonderadaC <- valorC * 5
+  
+  mediaPonderadaTotal <- (mediaPonderadaA + mediaPonderadaB + mediaPonderadaC) / 10
+  
+  escreval("MÈDIA = ", mediaPonderadaTotal:1:1)
+
+fimpara
+
+fimalgoritmo

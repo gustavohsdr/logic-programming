@@ -1,0 +1,25 @@
+algoritmo "problemaDentroForaV001"
+var
+valorRepeticao, i, contadorDentro, contadorFora : inteiro
+numero : real
+inicio
+escreva("Quantos numeros voce vai digitar? :")
+leia(valorRepeticao)
+
+para i de 0 ate (valorRepeticao - 1) faca
+  escreva("digite um numero: ")
+  leia(numero)
+  
+  se (numero >= 10) e (numero <= 20) entao
+     contadorDentro <- contadorDentro + 1
+     
+     senao
+          contadorFora <- contadorFora + 1
+  fimse
+
+fimpara
+
+escreval(contadorDentro, "DENTRO")
+escreval(contadorFora, "FORA")
+
+fimalgoritmo

@@ -1,0 +1,32 @@
+algoritmo "problemaParImparV001"
+var
+valorRepeticao, i: inteiro
+numero : real
+inicio
+escreva("Quantos numeros voce vai digitar? :")
+leia(valorRepeticao)
+
+para i de 0 ate (valorRepeticao - 1) faca
+  escreva("digite um numero: ")
+  leia(numero)
+
+  se numero = 0 entao
+    escreval("NULO")
+  fimse
+  se numero < 0 entao
+    se (numero % 2 = 0) entao
+      escreval("PAR NEGATIVO")
+      senao
+        escreval("IMPAR NEGATIVO")
+    fimse
+  fimse
+
+  se numero > 0 entao
+    se (numero % 2 = 0) entao
+      escreval("PAR POSITIVO")
+      senao
+        escreval("IMPAR POSITIVO")
+    fimse
+  fimse
+fimpara
+fimalgoritmo

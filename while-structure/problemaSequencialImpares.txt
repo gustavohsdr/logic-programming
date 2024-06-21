@@ -1,0 +1,17 @@
+algoritmo "problemaSequenciaImparesV001"
+var
+valorX,i, impar: inteiro
+
+inicio
+escreva("Digite o valor de X: ")
+leia(valorX)
+
+para i de 0 ate valorX faca
+     se (i % 2 <> 0) entao
+       impar <- i
+       escreval(i)
+  fimse
+
+fimpara
+
+fimalgoritmo
