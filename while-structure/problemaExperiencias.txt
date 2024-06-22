@@ -1,0 +1,54 @@
+algoritmo "problemaExperienciasV001"
+var
+sapo, rato, coelho: inteiro
+
+i, valorCasos, quantidadeCobaia, totalCobaia: inteiro
+
+tipoCobaia: caractere
+
+porcentagemCoelho, porcentagemRato, porcentagemSapo : real
+
+inicio
+escreva("Quantos casos de testes serao digitados: ")
+leia (valorCasos)
+
+para i de 1 ate valorCasos faca
+  escreva("Quantidade de cobaias: ")
+  leia(quantidadeCobaia)
+  escreva("Tipo de cobaia: ")
+  leia(tipoCobaia)
+  
+
+  
+  se (tipoCobaia = "c") ou (tipoCobaia = "C") entao
+    coelho <- coelho + quantidadeCobaia
+     
+    senao
+      se (tipoCobaia = "s") ou (tipoCobaia = "S") entao
+        sapo <- sapo + quantidadeCobaia
+        
+      senao
+        se (tipoCobaia = "r") ou (tipoCobaia = "R") entao
+          rato <- rato + quantidadeCobaia
+      fimse
+    fimse
+  fimse
+
+fimpara
+
+totalCobaia <- (coelho + rato + sapo)
+
+porcentagemCoelho <- (coelho / totalCobaia) * 100
+porcentagemRato <- (rato / totalCobaia) * 100
+porcentagemSapo <- (sapo / totalCobaia) * 100
+
+escreval("RELATORIO FINAL: ")
+escreval("Total: ", totalCobaia, "cobaias")
+escreval("Total de coelhos: ", coelho)
+escreval("Total de ratos: ", rato)
+escreval("Total de sapos: ", sapo)
+escreval("Percentual de coelhos: ", porcentagemCoelho:1:2)
+escreval("Percentual de ratos: ", porcentagemRato:1:2)
+escreval("Percentual de sapos: ", porcentagemSapo:1:2)
+
+fimalgoritmo
