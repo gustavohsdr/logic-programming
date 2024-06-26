@@ -1,0 +1,29 @@
+algoritmo "semnome"
+var
+i, quantidadeVetor: inteiro
+
+vetorA: vetor [0..99] de inteiro
+vetorB: vetor [0..99] de inteiro
+vetorC: vetor [0..99] de inteiro
+
+inicio
+escreva("Quantos valores vai ter cada vetor? ")
+leia(quantidadeVetor)
+
+escreval("Digite os valores do vetor A: ")
+para i de 0 ate quantidadeVetor - 1 faca
+  leia(vetorA[i])
+fimpara
+
+escreval("Digite os valores do vetor B: ")
+para i de 0 ate quantidadeVetor - 1 faca
+leia(vetorB[i])
+fimpara
+
+escreval("VETOR RESULTANTE")
+para i de 0 ate quantidadeVetor - 1 faca
+  vetorC[i] <- vetorA[i] + vetorB[i]
+  escreval(vetorC[i])
+fimpara
+
+fimalgoritmo

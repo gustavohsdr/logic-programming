@@ -1,0 +1,53 @@
+algoritmo "problemaDadosPessoasV001"
+var
+i, quantidadePessoas, contadorHomem, contadorMulher: inteiro
+maiorAltura, menorAltura, mediaAlturaMulheres: real
+somaAlturaMulher: real
+
+altura: vetor [0..9] de real
+genero: vetor [0..9] de caractere
+
+inicio
+escreva("Quantas pessoas serao digitadas? ")
+leia(quantidadePessoas)
+
+para i de 0 ate quantidadePessoas - 1 faca
+  escreva("Altura da", i + 1 ,"a pessoa: ")
+  leia(altura[i])
+  escreva("Genero da", i + 1 ,"a pessoa: ")
+  leia(genero[i])
+fimpara
+
+maiorAltura <- altura[0]
+para i de 1 ate quantidadePessoas - 1 faca
+  se altura[i] > maiorAltura entao
+    maiorAltura <- altura[i]
+  fimse
+fimpara
+
+menorAltura <- altura[0]
+para i de 1 ate quantidadePessoas - 1 faca
+  se altura[i] < menorAltura entao
+    menorAltura <- altura[i]
+  fimse
+fimpara
+
+para i de 0 ate quantidadePessoas - 1 faca
+  se (genero[i] = "f") ou (genero[i] = "F") entao
+    somaAlturaMulher <- altura[i] + somaAlturaMulher
+    contadorMulher <- contadorMulher + 1
+    
+    senao
+      contadorHomem <- contadorHomem + 1
+  fimse
+fimpara
+
+mediaAlturaMulheres <- somaAlturaMulher / contadorMulher
+
+escreval("Menor altura = ", menorAltura:1:2)
+escreval("Maior altura = ", maiorAltura:1:2)
+escreval("Media das alturas das mulheres = ", mediaAlturaMulheres:1:2)
+escreval("Numero de homens = ", contadorHomem)
+
+
+fimalgoritmo

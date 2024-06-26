@@ -1,0 +1,32 @@
+algoritmo "problemaMaiorPosicaoV001"
+var   ]
+i, quantidadeNumeros, contador: inteiro
+maiorNumero: real
+
+numeros: vetor[0..9] de real
+
+inicio
+escreva("Quantos numeros voce vai digitar? ")
+leia(quantidadeNumeros)
+
+para i de 0 ate quantidadeNumeros - 1 faca
+escreva("Digite um numero: ")
+leia(numeros[i])
+
+fimpara
+
+maiorNumero <- -1
+contador <- 0
+para i de 0 ate quantidadeNumeros - 1 faca
+  se (numeros[i] > maiorNumero) entao
+    maiorNumero <- numeros[i]
+    contador <- contador + 1
+    
+  fimse
+fimpara
+escreval("MAIOR VALOR = ", maiorNumero:1:1)
+escreval("POSICAO DO MAIOR VALOR = ", contador)
+
+
+fimalgoritmo
+

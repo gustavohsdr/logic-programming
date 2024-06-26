@@ -1,0 +1,22 @@
+algoritmo "problemaNegativosV001"
+var
+i, quantidadeDigitada : inteiro
+
+vet : vetor [0..9] de inteiro
+inicio
+escreva("Quantos numeros voce vai digitar?  ")
+leia(quantidadeDigitada)
+
+para i de 0 ate (quantidadeDigitada - 1 ) faca
+  escreva("Digite um numero: ")
+  leia(vet[i])
+fimpara
+
+
+escreval("NUMEROS NEGATIVOS: ")
+para i de 0 ate (quantidadeDigitada - 1 ) faca
+  se vet[i] < 0 entao
+  escreval(vet[i])
+  fimse
+fimpara
+fimalgoritmo

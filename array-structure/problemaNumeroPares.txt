@@ -1,0 +1,32 @@
+algoritmo "problemaNumerosParesV001"
+var
+i, quantidadeNumeros, contadorPar : inteiro
+
+numeros: vetor [0..9] de inteiro
+
+inicio
+escreva("Quantos numeros voce vai digitar? ")
+leia(quantidadeNumeros)
+
+para i de 0 ate quantidadeNumeros - 1 faca
+  escreva("Digite um numero: ")
+  leia(numeros[i])
+fimpara
+
+escreval
+escreval("NUMEROS PARES: ")
+para i de 0 ate quantidadeNumeros - 1 faca
+  se (numeros[i] % 2 = 0) entao
+    escreva(numeros[i])
+  fimse
+fimpara
+
+para i de 0 ate quantidadeNumeros - 1 faca
+  se (numeros[i] % 2 = 0) entao
+    contadorPar <- contadorPar + 1
+  fimse
+fimpara
+escreval
+escreval
+escreval("QUANTIDADE DE PARES = ", contadorPar)
+fimalgoritmo
